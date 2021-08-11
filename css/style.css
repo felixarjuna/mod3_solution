@@ -1,25 +1,125 @@
+/* Font Styles*/
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
+/* Color Palette */
+/*
+Color Palette 1: 
+background             : #121212;
+primary (violette)     : #BB86FC;
+p-varian (blue)        : #3700B3;
+secondary (green)      : #03DAC6;
+error (red)            : #CF6679;
+*/
+
 body {
-    height: 1000px;
+    height: 1150px;
     font-family: 'Ubuntu', sans-serif;
+    background-color: #212121;
 }
-h2 {
-    margin: 20px 0;
+
+/* SVG Wrapper */
+.svg-wrapper {
+    position: relative;
+    margin: 40px auto;
+    width: 320px; 
+    margin-bottom: 15px; 
+  }
+  
+  .shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke:#C192F8;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+
+  .text {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 5px;
+    color: #fff;
+    top: -45px;
+    position: relative;
+  }
+
+  .svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.7em;
 }
-h4 {
-    font-size: 1.3em;
-    font-weight: bold;
+
+.navbar-dark a.navbar-brand {
+    color: #e3cdfd;
 }
-.container .main-content {
-    background-color: #999999;
-    margin: 0px;
-    padding: 15px;
-    border-radius: 10px;
+
+.navbar {
+    background-color: #272727;
 }
-.main-content p {
-    padding: 20px;
-}
+
 .border {
     border-width: 2px !important;
+}
+
+/* Main Content */
+#chicken, #beef, #sushi {
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50px;
+    color: #e3cdfd;
+    background-color: #322B3A;
+    text-align: justify;
+}
+
+#chicken:hover, #beef:hover, #sushi:hover {
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50px;
+    color: #f8f1ff;
+    background-color: #19161B;
+    text-align: justify;
+}
+
+
+#chicken h3, #beef h3, #sushi h3{
+    border-radius: 5px;
+    color: #322B3A;
+    font-size: 1.3em;
+    padding: 10px;
+    background-color: #C595FC;
+    -webkit-box-shadow: 4px 5px 6px 1px rgba(197,149,252,0.74); 
+    box-shadow: 4px 5px 6px 1px rgba(197,149,252,0.74);
+}
+
+#chicken p, #beef p, #sushi p{
+    padding: 20px 0;
+}
+#chicken a, #beef a, #sushi a {
+    text-decoration: none;
+    
+    background-color: #322B3A;
+    color: #C595FC;
+    border: 1px solid #C595FC;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    bottom: 1%;
+    right: 25%;
+    width: 50%;
+}
+
+#chicken a:hover, #beef a:hover, #sushi a:hover {
+    text-decoration: none;
+    background-color: #C595FC;
+    color: #0e041c;
+    border: 1px solid #C595FC;
+    border-radius: 5px;
+    padding: 8px;
+    transition: all 0.5s;
 }
