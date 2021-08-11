@@ -12,7 +12,7 @@ error (red)            : #CF6679;
 */
 
 body {
-    height: 1150px;
+    height: 1500px;
     font-family: 'Ubuntu', sans-serif;
     background-color: #212121;
 }
@@ -69,6 +69,8 @@ body {
 
 /* Main Content */
 #chicken, #beef, #sushi {
+    width: 300px;
+    margin: 10px;
     padding: 20px;
     position: relative;
     padding-bottom: 50px;
@@ -84,6 +86,8 @@ body {
     color: #f8f1ff;
     background-color: #19161B;
     text-align: justify;
+    transform: scale(1.05) translateZ(0);
+    transition: all 0.8s ease;
 }
 
 
@@ -101,8 +105,8 @@ body {
     padding: 20px 0;
 }
 #chicken a, #beef a, #sushi a {
+    margin-bottom: 12px;
     text-decoration: none;
-    
     background-color: #322B3A;
     color: #C595FC;
     border: 1px solid #C595FC;
@@ -123,3 +127,4 @@ body {
     padding: 8px;
     transition: all 0.5s;
 }
+
