@@ -52,22 +52,21 @@ body {
   }
 
 /* Navbar */
-.navbar {
-    border-width: 50%;
-}
-
 .navbar-dark a.navbar-brand {
-    background: #664E85;
-    background: -webkit-linear-gradient(to bottom right, #664E85 0%, #926FBD 50%, #C192F8 100%);
-    background: -moz-linear-gradient(to bottom right, #664E85 0%, #926FBD 50%, #C192F8 100%);
-    background: linear-gradient(to bottom right, #664E85 0%, #926FBD 50%, #C192F8 100%);
+    /*background: #8867B0;
+    background: -webkit-linear-gradient(to right, #8867B0 1%, #664E85 100%);
+    background: -moz-linear-gradient(to right, #8867B0 1%, #664E85 100%);
+    background: linear-gradient(to right, #8867B0 1%, #664E85 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     font-size: 1.7em;
+    color: #f7f7f7;
+    letter-spacing: 2px;
 }
 
 .navbar {
-    background-color: #212121;
+    background-color: #222;
+    opacity: 1;
 }
 
 .border {
@@ -82,30 +81,6 @@ body {
     color: #e3cdfd;
     background-color: #322B3A;
     text-align: justify;
-}
-
-/* Desktop and Tab Version */ 
-@media (min-width:768px) {
-    #chicken, #beef, #sushi {
-        width: 30%;
-        margin: 0 auto;
-    }
-}
-
-/* Mobile Version */ 
-@media (min-width:576px) and (max-width:767px) {
-    #chicken, #beef, #sushi {
-        width: 45%;
-        margin: 0 auto;
-    }
-}
-
-/* Small Devices Version */
-@media (max-width:575px) {
-    #chicken, #beef, #sushi {
-        width: 80%;
-        margin: 0 auto;
-}
 }
 
 #chicken:hover, #beef:hover, #sushi:hover {
@@ -155,4 +130,34 @@ body {
     border-radius: 5px;
     padding: 8px;
     transition: all 0.5s;
+}
+
+/* Desktop and Tab Version */ 
+@media (min-width:768px) {
+    #chicken, #beef, #sushi {
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Version */ 
+@media (min-width:576px) and (max-width:767px) {
+    #chicken, #beef {
+        width: 47%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    #chicken:hover, #beef:hover, #sushi:hover {
+        transform: scale(1.02) translateZ(0);
+    }
+}
+
+/* Small Devices Version */
+@media (max-width:575px) {
+    #chicken, #beef, #sushi {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+}
 }
