@@ -4,27 +4,22 @@ body {
     height: 1000px;
     font-family: 'Ubuntu', sans-serif;
 }
-
 h2 {
     margin: 20px 0;
 }
-
 h4 {
     font-size: 1.3em;
     font-weight: bold;
 }
-
 .container .main-content {
     background-color: #999999;
     margin: 0px;
     padding: 15px;
     border-radius: 10px;
 }
-
 .main-content p {
     padding: 20px;
 }
-
 .border {
     border-width: 2px !important;
 }
