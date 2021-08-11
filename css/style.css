@@ -42,6 +42,7 @@ body {
     color: #fff;
     top: -45px;
     position: relative;
+    
   }
 
   .svg-wrapper:hover .shape {
@@ -51,16 +52,22 @@ body {
   }
 
 /* Navbar */
-.navbar-brand {
-    font-size: 1.7em;
+.navbar {
+    border-width: 50%;
 }
 
 .navbar-dark a.navbar-brand {
-    color: #e3cdfd;
+    background: #664E85;
+    background: -webkit-linear-gradient(to bottom right, #664E85 0%, #926FBD 50%, #C192F8 100%);
+    background: -moz-linear-gradient(to bottom right, #664E85 0%, #926FBD 50%, #C192F8 100%);
+    background: linear-gradient(to bottom right, #664E85 0%, #926FBD 50%, #C192F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7em;
 }
 
 .navbar {
-    background-color: #272727;
+    background-color: #212121;
 }
 
 .border {
