@@ -69,14 +69,36 @@ body {
 
 /* Main Content */
 #chicken, #beef, #sushi {
-    width: 300px;
-    margin: 10px;
     padding: 20px;
     position: relative;
     padding-bottom: 50px;
     color: #e3cdfd;
     background-color: #322B3A;
     text-align: justify;
+}
+
+/* Desktop and Tab Version */ 
+@media (min-width:768px) {
+    #chicken, #beef, #sushi {
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Version */ 
+@media (min-width:576px) and (max-width:767px) {
+    #chicken, #beef, #sushi {
+        width: 45%;
+        margin: 0 auto;
+    }
+}
+
+/* Small Devices Version */
+@media (max-width:575px) {
+    #chicken, #beef, #sushi {
+        width: 80%;
+        margin: 0 auto;
+}
 }
 
 #chicken:hover, #beef:hover, #sushi:hover {
@@ -127,4 +149,3 @@ body {
     padding: 8px;
     transition: all 0.5s;
 }
-
